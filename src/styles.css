@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.cell:hover {
+    background-color: lightgray;
+}
+
+.hit {
+    background-color: red;
+}
+
+.miss {
+    background-color: gray;
+}
